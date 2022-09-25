@@ -1,4 +1,9 @@
 # Kratin-assignment
+Problem Statement - Identify one use case for elderly care (for the age group
+65+) and create a working prototype to demonstrate
+your idea using technology known to you.
+
+
 1. A first display page where a user have to login/signup for the use.
 ![Alt text](/1st.png?raw=true "Optional Title")
 2. After the user is loged in succefully the user will we redirected to the homepage where an user can access the various sections.
