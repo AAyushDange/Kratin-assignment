@@ -1,0 +1,140 @@
+/* 
+** The Header Media Queries **
+** Tweak as per your needs **
+*/
+.brand {
+  font-weight: bold;
+  font-size: 20px; 
+  color: white ;
+}
+
+
+.site-header {
+  position: relative;
+  background-color: black; }
+
+.site-header__wrapper {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+  @media (min-width: 600px) {
+    .site-header__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 0;
+      padding-bottom: 0; } }
+@media (min-width: 600px) {
+  .nav__wrapper {
+    display: flex; } }
+
+@media (max-width: 599px) {
+  .nav__wrapper {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    background-color: blanchedalmond;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out; }
+    .nav__wrapper.active {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0); } }
+
+.nav__item a {
+  display: block;
+  padding: 1.5rem 1rem;
+color: white; }
+
+.nav__toggle {
+  display: none; }
+  @media (max-width: 599px) {
+    .nav__toggle {
+      display: block;
+      position: absolute;
+      right: 1rem;
+      top: 1rem; } }
+
+
+/*==========  Variables  ==========*/
+
+/*==========  Styles  ==========*/
+body {
+  background-color: #dcdcdc;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #7a94ae;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: red;
+}
+p{
+  color: white;
+}
+.rr > div {
+  text-align: center;
+}
+
+.rr {
+  position: relative;
+  height: 200px;
+  background: #232E39;
+}
+.rr.rr-left {
+  z-index: 1;
+  float: left;
+  width: 55%;
+}
+.rr.rr-right {
+  z-index: 2;
+  float: right;
+  width: 44%;
+}
+
+.rr:after,
+.rr:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 0;
+}
+
+.rr-left:after {
+  right: 0;
+  border-left: 100px solid #232E39;
+  border-bottom: 200px solid #dcdcdc;
+}
+
+.rr-right:before {
+  left: -100px;
+  border-right: 100px solid #232E39;
+  border-top: 200px solid transparent;
+}
+
+.rr-left > div {
+  margin-right: 100px;
+  margin-left: 50px;
+}
+
+.rr-right > div {
+  margin-right: 50px;
+  margin-left: 25px;
+}
+
+.rr:hover {
+  background: #101519;
+}
+
+.rr-left:hover:after {
+  border-left-color: #101519;
+}
+
+.rr-right:hover:before {
+  border-right-color: #101519;
+}
